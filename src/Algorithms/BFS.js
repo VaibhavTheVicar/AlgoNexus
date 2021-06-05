@@ -2,6 +2,8 @@ import asyncAwait from '../Utilities/AsyncDelay.js'
 import  {visit,isInbound,isBlocked,adjacent,trace} from '../Utilities/Traversal.js'
 
   const bfs = async (start, end, c, r) => {
+    console.log(start,">>>")
+    console.log(end,">>>>>>>>")
     let level = {};
     level[start] = 0;
     let parent = {};
@@ -33,7 +35,7 @@ import  {visit,isInbound,isBlocked,adjacent,trace} from '../Utilities/Traversal.
           }
         }
       }
-      console.log(`front:${lvl}${new_front}`);
+      // console.log(`front:${lvl}${new_front}`);
       lvl += 1;
       frontier = [...new_front];
     }

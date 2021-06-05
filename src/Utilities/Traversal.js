@@ -5,7 +5,13 @@ const visit = (i, j) => {
     element.classList.remove("blocked");
     element.classList.add("visited");
   };
-
+  const unvisit = (i, j) => {
+   
+    var element = document.getElementById(`${i}.${j}`);
+    element.classList.add("unvisited");
+    element.classList.remove("blocked");
+    element.classList.remove("visited");
+  };
 const trace = (i, j) => {
   
   var element = document.getElementById(`${i}.${j}`);
@@ -33,10 +39,14 @@ function adjacent(e) {
       [e[0], e[1] - 1],
       [e[0] + 1, e[1]],
       [e[0] - 1, e[1]],
+      [e[0]+1, e[1] + 1],
+      [e[0]-1, e[1] - 1],
+      [e[0] + 1, e[1]-1],
+      [e[0] - 1, e[1]+1],
 
       
       
     ];
   }
 
-  export {visit,isInbound,isBlocked,adjacent,trace}
+  export {unvisit,visit,isInbound,isBlocked,adjacent,trace}
