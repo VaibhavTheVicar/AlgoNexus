@@ -5,6 +5,7 @@ const visit = (i, j) => {
     element.classList.remove("blocked");
     element.classList.add("visited");
   };
+  
   const unvisit = (i, j) => {
    
     var element = document.getElementById(`${i}.${j}`);

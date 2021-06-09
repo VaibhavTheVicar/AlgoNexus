@@ -1,3 +1,10 @@
 *{margin: 0;
 padding: 0;
 background-color:black}
+
+*, *::after, *::before {
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-app-region: no-drag;
+	cursor: default;
+}

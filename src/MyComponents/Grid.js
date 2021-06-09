@@ -48,10 +48,10 @@ function Grid(props) {
       <div className="grid">
         <div className="prompt">
       <h4>How to build walls?</h4>
-    <p>Press control and hover over tiles to make them un-traversable.</p>
+    <p>Press (control and hover) or just (left-click and hover) over tiles to make them un-traversable.</p>
     <h4>How to break the walls?</h4>
-    <p>Change of mind? Press alt and hover over blocked tiles to make them traversable, again.</p>
-    <h4>Setting start point anf the goal post.</h4>
+    <p>Change of mind? Press (alt and hover) or just (right-click and hover) over blocked tiles to make them traversable, again.</p>
+    <h4>Setting start point and the goal post.</h4>
     <p>Set, start and end x,y co-ordinates respectively, on the left and right inputs; Make sure to not go out of bounds, for Y co-ordinate you can go 0 through 19 and for x you can go 0 through 29.</p>
     <h4>Run simulations.</h4>
     <p>By pressing BFS/DFS/Dijkstra or whatever you fancy.</p>

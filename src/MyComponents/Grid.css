@@ -10,11 +10,14 @@
     border-bottom:1px solid white;
     padding-top:20vh;
     height:80vh;
+    animation: flipInX;
+    animation-duration: 2s;
 
 }
 .prompt>p{
     border-bottom:1px solid white;
-    border-left: 1px solid white;;
+    border-left: 1px solid white;
+    
 }
 .prompt > button{
     border-radius: 5px;
@@ -25,7 +28,9 @@
     padding: 5px;
     margin: 5px;
     height:40px;
-    width:100%
+    width:100%;
+    animation: fadeIn;
+    animation-duration: 2s;
 }
 .gridRow{
     display:flex;
